@@ -83,6 +83,16 @@ body {
     color: black;
 }
 
+.image-slider img {
+
+    width: 100%;
+}
+
+.popular-menu h2 {
+
+    text-align: center;
+}
+
 @media (min-width: 992px) {
 
     .navbar {
@@ -115,5 +125,10 @@ body {
     .navbar-links li a {
 
         color: white;
+    }
+
+    .image-slider img {
+
+        height: 400px;
     }
 }
