@@ -1,0 +1,119 @@
+* {
+
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #314E52;
+}
+
+.navbar .logo img {
+
+    width: 250px;
+    height: 150px;
+}
+
+.toggle-button {    
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    /* background: red; */
+    /* align-items: center; */
+}
+
+.toggle-button img {
+
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-links {
+
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    display: none;
+    background-color: #F7F6E7;
+}
+
+.navbar-links.active {
+
+    display: flex;
+}
+
+.navbar-links ul {
+
+    width: 100%;
+    /* background: lightblue; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navbar-links li {
+
+    /* background: lightgreen; */
+    padding: 15px;
+}
+
+.navbar-links li:hover {
+
+    background-color: #F2A154;
+}
+
+.navbar-links li a {
+
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 992px) {
+
+    .navbar {
+
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .toggle-button {
+
+        display: none;
+    }
+
+    .navbar-links {
+
+        position: relative;
+        top: 0;
+        display: flex;
+        width: fit-content;
+        background-color: #314E52;
+
+    }
+
+    .navbar-links ul {
+
+        flex-direction: row;
+    }
+
+    .navbar-links li a {
+
+        color: white;
+    }
+}
