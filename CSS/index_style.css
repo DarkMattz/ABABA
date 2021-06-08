@@ -22,6 +22,7 @@ body {
 
     width: 250px;
     height: 150px;
+    margin-left: 50px;
 }
 
 .toggle-button {    
@@ -45,6 +46,7 @@ body {
 
     position: absolute;
     top: 220px;
+    left: 0;
     width: 100%;
     display: none;
     background-color: #F7F6E7;
@@ -114,7 +116,7 @@ body {
         display: flex;
         width: fit-content;
         background-color: #314E52;
-
+        margin-right: 60px;
     }
 
     .navbar-links ul {
