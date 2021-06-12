@@ -22,7 +22,6 @@ body {
 
     width: 250px;
     height: 150px;
-    margin-left: 50px;
 }
 
 .toggle-button {    
@@ -93,6 +92,7 @@ body {
 .popular-menu h2 {
 
     text-align: center;
+    font-size: 24px
 }
 
 @media (min-width: 800px) {
@@ -102,6 +102,11 @@ body {
         flex-direction: row;
         justify-content: space-between;
         padding: 0 15px;
+    }
+
+    .navbar .logo img {
+
+        margin-left: 50px;
     }
 
     .toggle-button {
