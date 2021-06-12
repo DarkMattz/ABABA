@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="CSS/index_style.css">
 </head>
 <body>
@@ -35,22 +36,50 @@
 
     <main>
         
-        <div class="image-slider">
+        <section class="image-slider">
+            
+            <figure>
+                <img src="images/slider1.jpg" alt="">
+                <img src="images/slider2.jpg" alt="">
+                <img src="images/slider3.jpg" alt="">
+            </figure>
+            
+            <button class="btn-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="btn-next"><i class="fas fa-chevron-right"></i></button>
+        </section>
 
-            <img src="images/slider2.jpg" alt="">
-        </div>
-
-        <div class="popular-menu">
+        <section class="popular-menu">
 
             <h2>Menu Populer</h2>
-        </div>
+
+            <div class="menu-list">
+
+                <div class="menu">
+                    <img src="images/tenderloin.png" alt="Tenderloin Steak">
+                    <p>Tenderloin Steak</p>
+                </div>
+    
+                <div class="menu">
+                    <img src="images/ribeye.png" alt="Ribeye Steak">
+                    <p>Ribeye Steak</p>
+                </div>
+    
+                <div class="menu">
+                    <img src="images/sirloin.png" alt="Sirloin Steak">
+                    <p>Sirloin Steak</p>
+                </div>
+
+            </div>
+            
+        </section>
 
     </main>
 
     <footer>
-
+        
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="JS/index_script.js"></script>
 </body>
 </html>
