@@ -102,6 +102,58 @@
     font-size: 36px;
 }
 
+
+.form{
+    background-color: #F7F6E7;
+    margin: 0 2rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    border-radius: 24px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.input-form{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input-form input{
+    width: 75vw;
+    height: 2.75rem;
+    padding: 10px;
+}
+
+.form label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-left{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-right{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-form{
+    margin: 4rem auto auto auto;
+    padding: 1.25rem 2rem;
+    border: unset;
+    border-radius: 10px;
+    background-color: #F2A154;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
 /* Phone End */
 
 
@@ -136,7 +188,7 @@
         display: flex;
         width: fit-content;
         background-color: #314E52;
-        margin-right: 2rem;
+        margin-right: 1.30rem;
     }
 
     .navbar-links ul {
@@ -162,16 +214,18 @@
         border-radius: 24px;
         display: flex;
         flex-flow: column;
+        align-items: unset;
     }
 
     .input-form{
         margin-top: 2.5rem;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
     }
 
     .input-form input{
-        width: 30rem;
+        width: 40vw;
         height: 2.75rem;
         padding: 10px;
     }
@@ -188,6 +242,7 @@
 
     .form-right{
         display: flex;
+        margin-top: 0;
         flex-direction: column;
     }
 
