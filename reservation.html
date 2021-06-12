@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    
-    <link rel="stylesheet" href="CSS/index_style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/reservation.css">
+    <title>Reservasi</title>
 </head>
 <body>
     
@@ -35,9 +35,38 @@
 
     <main>
         <h1 class="page-title">Reservation</h1>
-        <div class="reservation">
-
-        </div>
+        <form action="" method="post">
+            <div class="form">
+                <div class="form-left">
+                    <label for="name" class="name">Nama</label>
+                    <br>
+                    <input type="text" class="name">
+                    <br>
+                    <label for="telp" class="telp">No. Telepon</label>
+                    <br>
+                    <input type="tel" name="telp" id="telp">
+                    <br>
+                    <label for="people">Jumlah Orang</label>
+                    <br>
+                    <input type="number" name="people" id="people">
+                </div>
+                <div class="divisor"></div>
+                <div class="form-right">
+                    <label for="date" class="date">Tanggal</label>
+                    <br>
+                    <input type="date" name="date" id="date">
+                    <br>
+                    <label for="time" class="time">Waktu</label>
+                    <br>
+                    <input type="time" name="time" id="time">
+                    <br>
+                    <label for="coupon" class="coupon">Kode Kupon</label>
+                    <br>
+                    <input type="text" class="coupon">
+                </div>
+                <button type="submit">Kirimkan</button>
+            </div>
+        </form>
     </main>
 
     <footer>
