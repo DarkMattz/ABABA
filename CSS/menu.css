@@ -84,10 +84,6 @@ body {
     color: black;
 }
 
-.image-slider img {
-
-    width: 100%;
-}
 
 @media (min-width: 800px) {
 
@@ -128,13 +124,10 @@ body {
         color: white;
     }
 
-    .image-slider img {
-
-        height: 400px;
-    }
 
     .food-top{
         margin: 0 2vw;
+        margin-top: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -147,6 +140,7 @@ body {
         padding: 3vw 30px;
         flex-flow: column;
         display: flex;
+        align-items: stretch;
         width: 25vw;
         background-color: #C87B70;
         transition: box-shadow 0.5s ease-in-out, width 0.5s ease-in-out, padding-bottom 0.5s ease-in-out;
@@ -161,7 +155,8 @@ body {
     }
 
     .food:hover>img{
-        width: 17vw;
+        width: 20vw;
+        height: 15vw;
     }
 
     .food:hover>.description{
@@ -177,8 +172,10 @@ body {
     }
 
     .food img{
-        transition: width 0.5s ease-in-out;
-        width: 15vw;
+        transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+        width: 18vw;
+        height: 13vw;
+        object-fit: cover;
         margin: 0 auto;
     }
 
@@ -205,5 +202,17 @@ body {
         transition: font-size 0.5s ease-in-out;
         margin-bottom: 0.5vw;
         font-size: 1.8vw;
+    }
+
+    .food-bottom{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        margin: 0 12vw;
+    }
+
+    hr{
+        display: block;
+        margin: 50px 5vw
     }
 }
