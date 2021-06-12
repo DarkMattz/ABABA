@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-/* PC */
+/* Phone */
 
 /* Navbar */
 
@@ -99,25 +99,16 @@
 .page-title{
     margin: 3rem;
     text-align: center;
+    font-size: 36px;
 }
 
-.form{
-    background-color: #F7F6E7;
-    margin: 0 2rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-/* PC End */
+/* Phone End */
 
 
 
 @media (min-width: 800px) {
 
-    /* Phone */
+    /* PC */
 
     /* Navbar */
 
@@ -163,5 +154,54 @@
         height: 400px;
     }
 
-    /* Phone End */
+    .form{
+        background-color: #F7F6E7;
+        margin: 0 2rem;
+        padding: 2rem;
+        border-radius: 24px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .input-form{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .input-form input{
+        width: 30rem;
+        height: 2.75rem;
+        padding: 10px;
+    }
+
+    .form label{
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .form-left{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divisor{
+        border-left: 2px solid #C8C8C8;
+    }
+
+    .submit-form{
+        margin: 4rem auto auto auto;
+        padding: 1.25rem 2rem;
+        border: unset;
+        border-radius: 10px;
+        background-color: #F2A154;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    /* PC End */
 }
