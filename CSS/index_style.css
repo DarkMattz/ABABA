@@ -121,7 +121,7 @@ body {
         display: flex;
         width: fit-content;
         background-color: #314E52;
-        margin-right: 60px;
+        margin-right: 2rem;
     }
 
     .navbar-links ul {

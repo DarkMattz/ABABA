@@ -96,6 +96,19 @@
     font-size: 24px
 }
 
+.page-title{
+    margin: 3rem;
+    text-align: center;
+}
+
+.form{
+    background-color: #F7F6E7;
+    margin: 0 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 /* PC End */
@@ -132,7 +145,7 @@
         display: flex;
         width: fit-content;
         background-color: #314E52;
-        margin-right: 60px;
+        margin-right: 2rem;
     }
 
     .navbar-links ul {
