@@ -157,6 +157,7 @@
     .form{
         background-color: #F7F6E7;
         margin: 0 2rem;
+        margin-bottom: 5rem;
         padding: 2rem;
         border-radius: 24px;
         display: flex;
@@ -164,6 +165,7 @@
     }
 
     .input-form{
+        margin-top: 2.5rem;
         display: flex;
         justify-content: space-around;
     }
