@@ -9,7 +9,7 @@
 
 /* Phone */
 
-/* Navbar */
+/* Navbar Styles */
 
 .navbar {
 
@@ -31,8 +31,6 @@
     display: flex;
     flex-direction: row;
     color: white;
-    /* background: red; */
-    /* align-items: center; */
 }
 
 .toggle-button img {
@@ -55,12 +53,12 @@
 .navbar-links.active {
 
     display: flex;
+    z-index: 100;
 }
 
 .navbar-links ul {
 
     width: 100%;
-    /* background: lightblue; */
     margin: 0;
     padding: 0;
     display: flex;
@@ -70,7 +68,6 @@
 
 .navbar-links li {
 
-    /* background: lightgreen; */
     padding: 15px;
 }
 
@@ -83,17 +80,6 @@
 
     text-decoration: none;
     color: black;
-}
-
-.image-slider img {
-
-    width: 100%;
-}
-
-.popular-menu h2 {
-
-    text-align: center;
-    font-size: 24px
 }
 
 .page-title{
