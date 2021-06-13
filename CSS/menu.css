@@ -136,6 +136,232 @@ footer #copyright {
     text-decoration: underline;
 }
 
+.food-top{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food{
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 27px;
+    padding: 9vw 30px;
+    flex-flow: column;
+    display: flex;
+    width: 85vw;
+    background-color: #C87B70;
+    transition: box-shadow 0.5s ease-in-out, width 0.5s ease-in-out, padding-bottom 0.5s ease-in-out;
+    box-shadow: 0;
+}
+
+
+.food:hover{
+    box-shadow: 12px 12px 2px 1px #888888;
+    width: 90vw;
+    padding-bottom: 1vw;
+}
+
+.food:hover>img{
+    width: 73vw;
+    height: 53vw;
+    margin: 0 auto;
+}
+
+.food:hover>.description{
+    font-size: 4.2vw;
+}
+
+.food:hover>.pricetag{
+    font-size: 6.0vw;
+}
+
+.food:hover>.food-name{
+    font-size: 6.8vw;
+}
+
+.food img{
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    width: 70vw;
+    height: 50vw;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.pricetag, .description, .food-name{
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+.description {
+    transition: font-size 0.5s ease-in-out;
+    font-size: 4vw;
+}
+
+.pricetag{
+    transition: font-size 0.5s ease-in-out;
+    margin: 0.2vw 0;
+    margin-top: 1vw;
+    font-size: 5.6vw;
+    font-weight: bold;
+}
+
+.food-name{
+    transition: font-size 0.5s ease-in-out;
+    margin-bottom: 0.5vw;
+    font-size: 6.4vw;
+}
+
+.food-bottom{
+    display: flex;
+    flex-flow: column;
+}
+
+hr{
+    display: none;
+}
+
+.drink-name{
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+.drink{
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 27px;
+    padding: 9vw 30px;
+    flex-flow: column;
+    display: flex;
+    width: 85vw;
+    background-color: #C87B70;
+    transition: box-shadow 0.5s ease-in-out, width 0.5s ease-in-out, padding-bottom 0.5s ease-in-out;
+    box-shadow: 0;
+}
+
+
+.drink:hover{
+    box-shadow: 12px 12px 2px 1px #888888;
+    width: 90vw;
+    padding-bottom: 1vw;
+}
+
+.drink:hover>img{
+    height: 88vw;
+    width: 48vw;
+}
+
+.drink:hover>.description{
+    font-size: 4.2vw;
+}
+
+.drink:hover>.pricetag{
+    font-size: 6.0vw;
+}
+
+.drink:hover>.food-name{
+    font-size: 6.8vw;
+}
+
+.drink-section{
+    display: flex;
+    flex-flow: column;
+    margin: 0 2vw;
+}
+
+.drink-name{
+    transition: font-size 0.5s ease-in-out;
+    margin-bottom: 0.5vw;
+    font-size: 7.6vw;
+}
+
+.nestea img{
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    width: 60vw;
+    height: 80vw;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.nestea:hover>img{
+    height: 88vw;
+    width: 68vw;
+}
+
+.aqua img{
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    height: 80vw;
+    width: 40vw;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.coke img{
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    height: 80vw;
+    width: 40vw;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+footer {
+
+    margin-top: 60px;
+    background: #314E52;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    /* font-size: 18px; */
+}
+
+footer .contact {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #copyright {
+
+    font-size: 14px;
+    color: #8C8C8C;
+}
+
+#social-media-list {
+
+    margin-top: 30px;
+}
+
+#social-media {
+
+    width: 200px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#social-media img {
+
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+#social-media a {
+
+    color: white;
+    text-decoration: none;
+}
+
+#social-media a:hover {
+    /* Style ketika link social media di hover */
+    text-decoration: underline;
+}
+
 @media (min-width: 800px) {
 
     .navbar {
@@ -185,6 +411,7 @@ footer #copyright {
     }
 
     .food{
+        margin: 0;
         margin-top: 25px;
         margin-bottom: 25px;
         border-radius: 27px;
@@ -210,15 +437,15 @@ footer #copyright {
     }
 
     .food:hover>.description{
-        font-size: 1.4vw;
+        font-size: 1.3vw;
     }
 
     .food:hover>.pricetag{
-        font-size: 1.6vw;
+        font-size: 1.5vw;
     }
 
     .food:hover>.food-name{
-        font-size: 1.8vw;
+        font-size: 1.7vw;
     }
 
     .food img{
@@ -298,23 +525,15 @@ footer #copyright {
     }
 
     .drink:hover>.description{
-        font-size: 1.4vw;
+        font-size: 1.3vw;
     }
 
     .drink:hover>.pricetag{
-        font-size: 1.6vw;
+        font-size: 1.5vw;
     }
 
     .drink:hover>.food-name{
-        font-size: 1.8vw;
-    }
-
-    .food img{
-        transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-        width: 17vw;
-        height: 12vw;
-        object-fit: cover;
-        margin: 0 auto;
+        font-size: 1.7vw;
     }
 
     .drink-section{
