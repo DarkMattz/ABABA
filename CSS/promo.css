@@ -480,6 +480,12 @@ footer #copyright {
         font-weight: bold;
     }
 
+    .code{
+        font-size: 1.8vw;
+        font-weight: bolder;
+        color: white;
+    }
+
     .food-name{
         transition: font-size 0.5s ease-in-out;
         margin-bottom: 0.5vw;
