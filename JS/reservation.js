@@ -45,7 +45,7 @@ function validate() {
     } else {
         $(".time-error").css("display", "none")
     }
-    const coupon = ["ABPSFEB", "ABMGJUL", "ABBDCOU"]
+    const coupon = ["ABPSFEB", "ABMGJUL", "ABXDGRL"]
     var usedCode = ""
     coupon.forEach(function(code){
         if(code == $("#coupon").val()){
