@@ -30,11 +30,14 @@ function validate() {
     }
     const d = new Date()
     var checkDate = new Date($("#date").val())
-    if((checkDate.getDate() <= d.getDate() && checkDate.getMonth() <= d.getMonth() && checkDate.getFullYear() <= d.getFullYear()) || $("#date").val() == ""){
+    if($("#date").val() == ""){
+        $(".date-error").css("display", "initial")
+        valid = false
+    } else if(checkDate.getDate() <= d.getDate() && checkDate.getMonth() <= d.getMonth() && checkDate.getFullYear() <= d.getFullYear()){
         $(".date-error").css("display", "initial")
         valid = false
     } else {
-        $(".date-error").css("display", "none")
+        $(".date-error").css("display", "none")   
     }
     if(parseInt($("#time").val().substr(0,2) )< 9 || parseInt($("#time").val().substr(0,2)) > 20 || $("#time").val() == ""){
         $(".time-error").css("display", "initial")
