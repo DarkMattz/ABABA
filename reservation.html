@@ -63,19 +63,19 @@
                         <br>
                         <input type="date" name="date" id="date" placeholder="dd-mm-yyyy">
                         <br>
-                        <p class="form-error">Mohon masukkan tanggal dengan benar</p>
+                        <p class="form-error date-error">Mohon masukkan tanggal dengan benar, reservasi hanya bisa dilakukan satu hari setelah hari ini</p>
                         <br>
                         <label for="time" class="time">Waktu</label>
                         <br>
                         <input type="time" name="time" id="time">
                         <br>
-                        <p class="form-error">Mohon masukkan waktu dengan benar</p>
+                        <p class="form-error time-error">Mohon masukkan waktu dengan benar, reservasi hanya bisa dilakukan jam 9 pagi hingga jam 8 malam</p>
                         <br>
                         <label for="coupon" class="coupon">Kode Kupon</label>
                         <br>
-                        <input type="text" class="coupon">
+                        <input type="text" class="coupon" id="coupon">
                         <br>
-                        <p class="form-error">Kupon tidak ditemukan.</p>
+                        <p class="form-error coupon-error">Kupon tidak ditemukan.</p>
                     </div>
                 </div>
                 <button type="submit" class="submit-form">Kirimkan</button>
@@ -84,7 +84,33 @@
     </main>
 
     <footer>
+        
+        <section class="contact">
+            <h3>Temukan kami di</h3>
 
+            <div id="social-media-list">
+    
+                <div id="social-media">
+                    <img src="images/facebook.png" alt="Facebook">
+                    <p><a href="https://www.facebook.com">ababasteak.id</a></p>
+                </div>
+    
+                <div id="social-media">
+                    <img src="images/twitter.png" alt="Twitter">
+                    <p><a href="https://www.twitter.com">ababasteak.id</a></p>
+                </div>
+    
+                <div id="social-media">
+                    <img src="images/instagram.png" alt="Instagram">
+                    <p><a href="https://www.instagram.com">ababasteak.id</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="copyright">
+            <p>Copyright ©2021 ABABA STEAK</p>
+        </section>
+        
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="JS/reservation.js"></script>
