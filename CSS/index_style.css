@@ -282,7 +282,7 @@ footer #copyright {
         display: flex;
         width: fit-content;
         background-color: #314E52;
-        margin-right: 25px;
+        margin-right: 10px;
     }
 
     .navbar-links ul {

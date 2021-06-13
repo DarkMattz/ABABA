@@ -5,6 +5,6 @@ $(document).ready(function() {
     toggleButton.addEventListener("click", function() {
     
         navbarLinks.classList.toggle("active")
-    });
+    })
 
 })
