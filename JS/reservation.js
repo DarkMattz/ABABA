@@ -61,9 +61,9 @@ function validate() {
     const month = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
     if(valid){
         if(usedCode != ""){
-            alert("Selamat "+ $("#name").val() +" ! Reservasi berhasil dilakukan!!! \nAnda telah menggunakan kode kupon : " + usedCode + "\nmohon datang pada jam " + $("#time").val() + " di tanggal " + checkDate.getDate() + " " + month[checkDate.getDate()] + " " + checkDate.getFullYear() + "\nkami akan menghubungi nomor " + $("#telp").val() + " untuk mengkonfirmasi reservasi." )
+            alert("Selamat "+ $("#name").val() +" ! Reservasi berhasil dilakukan!!! \nAnda telah menggunakan kode kupon : " + usedCode + "\nmohon datang pada jam " + $("#time").val() + " di tanggal " + checkDate.getDate() + " " + month[checkDate.getMonth()] + " " + checkDate.getFullYear() + "\nkami akan menghubungi nomor " + $("#telp").val() + " untuk mengkonfirmasi reservasi." )
         } else {
-            alert("Selamat "+ $("#name").val() +" ! Reservasi berhasil dilakukan!!! \nmohon datang pada jam " + $("#time").val() + " di tanggal " + checkDate.getDate() + " " + month[checkDate.getDate()] + " " + checkDate.getFullYear() + "\nkami akan menghubungi nomor " + $("#telp").val() + " untuk mengkonfirmasi reservasi.")  
+            alert("Selamat "+ $("#name").val() +" ! Reservasi berhasil dilakukan!!! \nmohon datang pada jam " + $("#time").val() + " di tanggal " + checkDate.getDate() + " " + month[checkDate.getMonth()] + " " + checkDate.getFullYear() + "\nkami akan menghubungi nomor " + $("#telp").val() + " untuk mengkonfirmasi reservasi.")  
         }
     }
     return false
