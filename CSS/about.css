@@ -140,7 +140,7 @@ footer #copyright {
 .page-title{
     margin: 10vw;
     text-align: center;
-    font-size: 6vw;
+    font-size: 8vw;
 }
 
 .about-section{
@@ -324,9 +324,11 @@ footer #copyright {
         margin: 0 2vw;
     }
 
+    
     .page-title{
-        margin: 4vw;
-        font-size: 2.5vw;
+        margin: 3vw;
+        text-align: center;
+        font-size: 3vw;
     }
 
     .intro{
